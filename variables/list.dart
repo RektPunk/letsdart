@@ -25,5 +25,3 @@ void main() {
   list.removeWhere((element) => element.contains('good'));
   print('list after removed: $list');
 }
-
-

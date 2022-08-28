@@ -16,5 +16,3 @@ void main() {
   print('doubleName: $doubleName');
   print('boolName: $boolName');
 }
-
-
