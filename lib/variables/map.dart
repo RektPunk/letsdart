@@ -29,4 +29,9 @@ void main() {
   });
   map.update('key1', (value) => '2');
   print('map: $map');
+
+  print(map.containsKey('key1'));
+  
+  map.clear();
+  print('map: $map');
 }

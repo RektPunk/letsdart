@@ -11,6 +11,7 @@ void main() {
   list.add('good2');
   list.add('awesome');
   list.add(hi);
+  list.addAll(['a', 'b', 'c']);
   print('list: $list');
   print('list.length: ${list.length}');
   print('list.contains: ${list.contains('good1')}');
@@ -24,4 +25,7 @@ void main() {
   list.removeAt(0);
   list.removeWhere((element) => element.contains('good'));
   print('list after removed: $list');
+
+  list.removeWhere((element) => ['a', 'b', 'c'].contains(element));
+  print('list removed: $list');
 }
