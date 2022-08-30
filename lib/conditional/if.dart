@@ -16,4 +16,6 @@ void main() {
     print('$number is not divided by 3 with ${number % 3}');
   }
   print('end');
+
+  print(4 > 5 ? 'not false' : 'not true');
 }
