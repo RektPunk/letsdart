@@ -26,4 +26,11 @@ void main() {
   print('isTrue2: $isTrue2');
   print('isTrue3: $isTrue3');
   print('isTrue4: $isTrue4');
+
+  bool? isTrue5;
+  if (3 >= 4) {
+    isTrue5 = true;
+  }
+  isTrue5 ??= false; // null then input
+  print('isTrue5: $isTrue5');
 }
