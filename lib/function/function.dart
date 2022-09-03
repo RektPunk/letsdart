@@ -2,9 +2,13 @@ void main() {
   int a = 1;
   int b = plusone(a);
   int c = plus(a, b);
+  int d = add(a: a);
+  int e = add(a: a, b: d);
   print(a);
   print(b);
   print(c);
+  print(d);
+  print(e);
   
   String str = "HHHH";
   print(tolower(str));
@@ -32,4 +36,8 @@ String tolower(String args) {
 int dosometing(var args) {
   print(args);
   return 200;
+}
+
+int add({required int a, int? b}) {
+  return a + (b ?? 0);
 }
